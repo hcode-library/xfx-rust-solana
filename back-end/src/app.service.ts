@@ -20,12 +20,12 @@ export class AppService implements OnModuleInit {
   private payer = Keypair.fromSecretKey(
     Uint8Array.from(
       JSON.parse(
-        fs.readFileSync('../my_solana_program/my-keypair.json', 'utf-8'),
+        fs.readFileSync('../meu_solana_programa/my-keypair.json', 'utf-8'),
       ),
     ),
   );
   private programId = new PublicKey(
-    'HJPSNU1TdWdMAYieuyV9jV1tQHv97KsqHGPDFrpTnjzM',
+    '** SEU PROGRAM ID **',
   );
 
   private genAI: GoogleGenerativeAI;
